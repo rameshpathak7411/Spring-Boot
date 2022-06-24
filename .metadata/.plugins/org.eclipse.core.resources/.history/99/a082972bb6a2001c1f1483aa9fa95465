@@ -1,0 +1,5 @@
+package com.sprinboot.crud.swagger.config;
+
+public class EmployeeConfig {
+
+}
