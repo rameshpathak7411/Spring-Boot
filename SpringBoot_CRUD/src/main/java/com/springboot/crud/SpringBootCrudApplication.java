@@ -10,7 +10,7 @@ public class SpringBootCrudApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCrudApplication.class, args);
-		System.out.println("hello");
+		System.out.println("Hello Ramesh - First update after Cloning Github project to Eclipse");
 	}
 
 }
