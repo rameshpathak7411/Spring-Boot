@@ -1,0 +1,8 @@
+package com.sprinboot.crud.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class FilterConfiguration {
+
+}
