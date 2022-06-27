@@ -5,7 +5,6 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,9 +23,6 @@ import com.springboot.crud.service.EmployeeService;
 public class EmployeeController {
 	Logger logger= LoggerFactory.getLogger(EmployeeController.class);
 	
-	@Value("${user.name}")
-	private String username;
-	
 	@Autowired
 	EmployeeService employeeService;
 	
@@ -34,7 +30,6 @@ public class EmployeeController {
 	public ResponseEntity<List<Employee>> getAllEmployee() {
 		/* return employeeService.getEmployees(); */
 		logger.info("Inside the getAllEmployee()" );
-		logger.info("User Name" + username);
 		return  ResponseEntity.ok(employeeService.getEmployees());
 	}
 	

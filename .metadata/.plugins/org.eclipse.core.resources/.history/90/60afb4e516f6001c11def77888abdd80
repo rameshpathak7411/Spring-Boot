@@ -15,6 +15,3 @@ management.endpoints.web.base-path=/admin
 #Configuring the basic authentication 
 spring.security.user.name=bfittes
 spring.security.user.password=password
-
-#Read the below property in your controller.
-user.name=Ramesh

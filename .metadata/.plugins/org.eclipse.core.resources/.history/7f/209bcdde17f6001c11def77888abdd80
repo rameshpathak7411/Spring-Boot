@@ -34,7 +34,6 @@ public class EmployeeController {
 	public ResponseEntity<List<Employee>> getAllEmployee() {
 		/* return employeeService.getEmployees(); */
 		logger.info("Inside the getAllEmployee()" );
-		logger.info("User Name" + username);
 		return  ResponseEntity.ok(employeeService.getEmployees());
 	}
 	
